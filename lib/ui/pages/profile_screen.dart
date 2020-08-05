@@ -79,16 +79,36 @@ class ProfileScreen extends StatelessWidget {
             left: 0,
             right: 0,
             child: Container(
-              color: Colors.grey,
-              height: height,
+              height: height * 6,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(
                       bottom: 8,
+                      left: 32,
+                      right: 16,
                     ),
                     child: Text(
                       "MEALS FOR TODAY",
+                      style: const TextStyle(
+                          color: Colors.blueGrey,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Row(
+                        children: <Widget>[],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Row(
+                        children: <Widget>[],
+                      ),
                     ),
                   ),
                 ],
